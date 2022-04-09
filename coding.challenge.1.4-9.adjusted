@@ -1,0 +1,66 @@
+//
+//  ContentView.swift
+//  Shared
+//
+//  Created by Marvin and Alan on 4/9/22.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        HStack {
+            VStack {
+                Image(systemName: "newspaper.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20)
+                    .foregroundColor(.red)
+                Spacer()
+                    .frame(height:30)
+                Image(systemName: "newspaper.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20)
+                    .foregroundColor(.green)
+            }
+            
+            Spacer()
+            
+            Image(systemName: "tray.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50)
+            
+            Spacer()
+            
+            VStack {
+                Image(systemName: "newspaper.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20)
+                    .foregroundColor(.blue)
+                Spacer()
+                    .frame(height:30)
+                Image(systemName: "newspaper.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20)
+                    .foregroundColor(.yellow)
+            }
+        }
+        .padding(10)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+
+
+//test
+//newspaper.fill
+//tray.fill
